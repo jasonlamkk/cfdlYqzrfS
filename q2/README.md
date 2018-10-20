@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-npm install
+npm install --save-dev
 ```
 
 ### Compiles and hot-reloads for development
@@ -20,7 +20,7 @@ npm run build
 npm run test
 ```
 
-### Lints and fixes files
+### Run production
 ```
-npm run lint
+npm run prod
 ```

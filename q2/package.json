@@ -5,17 +5,23 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "./node_modules/mocha/bin/mocha 'src/**/*.spec.js'",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "node_modules/mocha/bin/mocha -r node_modules/should/should.js test 'src/**/*.spec.js'",
+    "prod": "node_modules/http-server/bin/http-server ./dist"
   },
   "dependencies": {
-    "@vue/cli-service": "^3.0.5",
     "vue": "^2.5.17",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "http-server": "^0.11.1",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
     "root": true,
