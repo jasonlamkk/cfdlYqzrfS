@@ -1,5 +1,9 @@
 # q2
 
+```
+cd q2
+```
+
 ## Project setup
 ```
 npm install --save-dev
